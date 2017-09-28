@@ -37,13 +37,22 @@ body {
 .clearfix:after {
 	clear: both;
 }
+ // Fixed notice ovarlap
+.notice {
+	position: relative;
+	margin: 20px 0 -16px 0;
+	padding: 5px 5px 5px 50px;
+}
 
+.alert {
+	position: relative;
+}
 // BUTTON STYLING
 
 button, .button {
 	border: none;
 	outline: none;
-	background: $green;
+	background: #f79c60;
 	padding: 1rem 3.5rem;
 	border-radius: 0.1rem;
 	a {
@@ -59,22 +68,23 @@ button, .button {
 }
 
 a {
-	color: $green;
+	color: #f79c60;
+	text-align: center;
 	text-decoration: none;
 	&:hover {
-		color: $dark_gray;
+		color: #f79c60;
 	}
 }
 
 // HEADER STYLING
 
 header {
-	background: #529ECC;
+	background: #f79c60;
 	position: absolute;
 	top: 0;
 	width: 100%;
 	padding: 1.75rem 0;
-	border-bottom: 1.5px solid #376490;
+	border-bottom: 3px solid #78594B;
 	.header_inner {
 		width: 90%;
 		margin: 0 auto;
@@ -106,7 +116,7 @@ header {
 // FOOTER STYLING (OPTIONAL)
 
 footer {
-	background: #529ECC;
+	background: #f79c60;
 	width: 100%;
 	padding: 2rem 0;
 	color: white;
@@ -114,7 +124,7 @@ footer {
 	@include bold_font;
 	p {
 		margin: 0;
-		font-size: .65rem;
+		font-size: .85rem;
 	}
 }
 
@@ -122,7 +132,7 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
 	width: 100%;
 	margin-bottom: 1rem;
 	border: 1px solid $light_gray;
-	border-radius: .4rem;
+	border-radius: 4rem;
 }
 
 input[type="text"], input[type="email"], input[type="password"] {

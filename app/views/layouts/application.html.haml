@@ -8,8 +8,7 @@
 %body
   %header
     .header_inner
-      = link_to "FileCabiet", root_path, id: "logo"
-
+      = link_to "FileCabinet", root_path, id: "logo"
       %nav
         - if user_signed_in?
           = link_to "Create Doc", new_doc_path
@@ -21,5 +20,5 @@
   %p.notice= notice
   %p.alert= alert
 
-  = yield 
+  = yield
 
